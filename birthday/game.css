@@ -1,0 +1,29 @@
+/* * {
+    transition: all 1s ease-out;
+} */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* #gameboard {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+} */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+    margin: .5rem;
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+}
