@@ -6,8 +6,8 @@
     </head>
     <body>
         <!-- <h1>CONNECTIONS</h1> -->
-        <header> Go Back to Games Menu</header>
-        <h2>Create four groups of four!</h2>
+        <a href="../index.html"><header> Go Back to Games Menu</header></a>
+        <p>Create four groups of four!</p>
         <div class="word-grid">
             <div class="word-grid-row" id="row-0">
                 <div class="word" id="0" onclick="selectWord(0)">CAKE</div>
@@ -39,8 +39,8 @@
         </div>
         <div>
             <button id="shuffle">Shuffle</button>
-            <button id="deselect all">Deselect All</button>
-            <button id="submit">Submit</button>
+            <button id="deselect all" onclick="deselect()">Deselect All</button>
+            <button id="submit" onclick="submit()">Submit</button>
         </div>
     </body>
 </html>

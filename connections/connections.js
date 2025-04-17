@@ -24,12 +24,26 @@ function selectWord(id) {
         selectable += 1;
     }
     else if (selectable > 0) {
-        selected.set(word);
+        selected.set(word, id);
         document.getElementById(id).style.backgroundColor = 'gray';
         document.getElementById(id).style.color = 'white';
         selectable -= 1;
     }
+    buttonChecks()
+}
 
+function deselect() {
+    selectable = 4;
+    selected.forEach((value, key) => {
+        let word = document.getElementById(value);
+        word.style.color = 'black';
+        word.style.backgroundColor = 'lightgray';
+    });
+    selected = new Map();
+    buttonChecks()
+}
+
+function buttonChecks() {
     let submit = document.getElementById("submit");
     if (selectable === 0) {
         submit.style.backgroundColor = "black";
@@ -51,4 +65,8 @@ function selectWord(id) {
         deselect.style.color = "black";
         // submit.disable
     }
+}
+
+function submit() {
+    return
 }

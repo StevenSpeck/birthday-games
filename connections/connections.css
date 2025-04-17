@@ -3,23 +3,34 @@ header {
     align-items: center;
     justify-content: center;
 
-    width: 20vw;
+    /* width: 20vw; */
+    width:90vw;
     height: 4rem;
     border-radius: 1rem;
     border-color: gray;
     border-width: .125rem;
     border-style: solid;
     margin: auto;
-    padding-left: 35vw;
-    padding-right: 35vw;
+    /* padding-left: 35vw;
+    padding-right: 35vw; */
 }
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "NYT Franklin", "Franklin Gothic", Arial, sans-serif; /* Include fallback fonts */
+    font-family: "NYT Franklin", Arial, sans-serif; /* Include fallback fonts */
     font-weight: 700;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-weight: 150;
+}
+
 
 .word-grid {
     display: flex;
@@ -50,6 +61,11 @@ body {
     display: flex;
     flex-direction: row;
     align-items: left;
+}
+
+#mistakes > * {
+    margin: .5rem;
+    color: gray;
 }
 
 button {
