@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="connections.css"></link>
+        <script src="connections.js"></script>
+    </head>
+    <body>
+        <!-- <h1>CONNECTIONS</h1> -->
+        <header> Go Back to Games Menu</header>
+        <h2>Create four groups of four!</h2>
+        <div class="word-grid">
+            <div class="word-grid-row" id="row-0">
+                <div class="word" id="0" onclick="selectWord(0)">CAKE</div>
+                <div class="word" id="1" onclick="selectWord(1)">MAKE</div>
+                <div class="word" id="2" onclick="selectWord(2)">BAKE</div>
+                <div class="word" id="3" onclick="selectWord(3)">TAKE</div>
+            </div>
+            <div class="word-grid-row" id="row-1">
+                <div class="word" id="4" onclick="selectWord(4)">BIRTHDAY</div>
+                <div class="word" id="5" onclick="selectWord(5)">HITLER</div>
+                <div class="word" id="6" onclick="selectWord(6)">80</div>
+                <div class="word" id="7" onclick="selectWord(7)">WEED</div>
+            </div>
+            <div class="word-grid-row" id="row-2">
+                <div class="word" id="8" onclick="selectWord(8)">ARIEL</div>
+                <div class="word" id="9" onclick="selectWord(9)">WILLOW</div>
+                <div class="word" id="10" onclick="selectWord(10)">ONYX</div>
+                <div class="word" id="11" onclick="selectWord(11)">RIVER</div>
+            </div>
+            <div class="word-grid-row" id="row-3">
+                <div class="word" id="12" onclick="selectWord(12)">SAMUEL</div>
+                <div class="word" id="13" onclick="selectWord(13)">ELLEN</div>
+                <div class="word" id="14" onclick="selectWord(14)">TUHINO</div>
+                <div class="word" id="15" onclick="selectWord(15)">SAMBIT</div>
+            </div>
+        </div>
+        <div id="mistakes">
+            <p>Mistakes Remaining: </p> <p> * * * *</p>
+        </div>
+        <div>
+            <button id="shuffle">Shuffle</button>
+            <button id="deselect all">Deselect All</button>
+            <button id="submit">Submit</button>
+        </div>
+    </body>
+</html>
