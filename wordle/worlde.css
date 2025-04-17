@@ -1,0 +1,79 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20vw;
+    height: 3rem;
+    border-radius: 1rem;
+    border-color: gray;
+    border-width: .125rem;
+    border-style: solid;
+    margin: auto;
+    padding-left: 35vw;
+    padding-right: 35vw;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guesses {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
+.guess-row {
+    display: flex;
+    flex-direction: row;
+}
+.guess-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    padding: .5rem;
+    margin: .25rem;
+    color: white;
+    font-size: 3rem;
+    border-color: lightgray;
+    border-width: .125rem;
+    border-style: solid;
+}
+
+.keyboard-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.keyboard-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 4rem;
+    min-width: 3rem;
+    padding: auto;
+    margin: .125rem;
+
+    background-color: lightgray;
+
+    border-radius: .5rem;
+    border-width: .125rem;
+    border-style: solid;
+    border-color: lightgray;
+
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+img {
+    height: 1rem;
+    width: 1rem;
+    object-fit: contain;
+}
