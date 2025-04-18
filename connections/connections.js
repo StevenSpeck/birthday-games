@@ -16,7 +16,6 @@ const selectedWordGroups = [
 
 function selectWord(id) {
     let word = document.getElementById(id).innerText;
-    console.log("selected is", selected, "selectable is ", selectable)
     if (selected.has(word)) {
         selected.delete(word);
         document.getElementById(id).style.backgroundColor = 'lightgray';
@@ -67,6 +66,25 @@ function buttonChecks() {
     }
 }
 
+
+const wordToGroup = new Map();
+for (let i=0;i<4;i++) {
+    for (let j=0;j<4;j++) {
+        wordToGroup[selectedWordGroups[i][j]] = [selectedWordGroups[i]]
+    }
+}
+
 function submit() {
-    return
+    let isAGroup = True;
+    for
+    if (true) {
+        //empty selected
+        //remove row
+        //rearrange remaining words
+        //win condition
+    }
+    else {
+        //penalty
+        //shaking
+    }
 }

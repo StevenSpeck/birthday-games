@@ -2,6 +2,10 @@ let gameWon = false;
 let board = [-1,-1,-1,-1,-1,-1,-1,-1,-1]
 let moves = 9;
 
+//prior to setting up the svg of our faces, apply colors to checking for logic
+//logic green=three in a row, red=lose 3 in a row, yellow=two in a row, black=lone
+//could create similar maps to ones used to determine victory
+
 function buttonPress(buttonId) {
   let spot = document.getElementById(buttonId);
   let turn = document.getElementById("O-to-go");

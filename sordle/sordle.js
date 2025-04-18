@@ -19,7 +19,6 @@ function placeLetter(letter) {
         guessedLetter.style.borderColor = "gray";
         letterNumber += 1;
     }
-    console.log(currentGuess)
 }
 
 function submit() {
@@ -43,7 +42,12 @@ function submit() {
         if (guessIsCorrectSoFar) {
             document.getElementById("body").style.backgroundColor = "blue";
         }
+        currentGuessArray = [];
         wordNumber += 1;
+        letterNumber = 0;
+        if (wordNumber === 6) {
+            document.getElementById("body").style.backgroundColor = "red";
+        }
     }
 }
 
@@ -53,7 +57,6 @@ function backspace() {
         letterNumber -= 1;
         document.getElementById(wordNumber*5 + letterNumber).innerText = "";
     }
-    console.log(currentGuessArray)
 }
 
 // var board = [,,,,,,,,,,,,,,,]
