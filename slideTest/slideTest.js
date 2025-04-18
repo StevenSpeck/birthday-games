@@ -116,14 +116,18 @@ const positions = {
     }
 };
 
-function swipe() {
-    if (left) {
-        left = false;
-        document.getElementById("0").style.marginLeft = "6rem";
+function swipe(direction) {
+    if ("left") {
+        document.getElementById("0").style.marginLeft = "-11.5rem";
     }
-    else {
-        left = true;
-        document.getElementById("0").style.marginLeft = "-5.5rem";
+    else if ("right") {
+        document.getElementById("0").style.marginLeft = "18rem";
+    }
+    else if ("up") {
+        document.getElementById("0").style.marginTop = "-24rem";
+    }
+    else if ("down") {
+        document.getElementById("0").style.marginTop = "-7.5rem";
     }
 }   
 
