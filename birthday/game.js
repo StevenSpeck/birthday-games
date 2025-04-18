@@ -119,3 +119,40 @@ window.addEventListener('keydown', event => {
     }
     attemptPlacingNewNumber();
 })
+
+let touchstartX = 0;
+let touchstartY = 0;
+let touchendX = 0;
+let touchendY = 0;
+
+document.addEventListener('touchstart', function(event) {
+    touchstartX = event.changedTouches[0].screenX;
+    touchstartY = event.changedTouches[0].screenY;
+}, false);
+
+document.addEventListener('touchend', function(event) {
+    touchendX = event.changedTouches[0].screenX;
+    touchendY = event.changedTouches[0].screenY;
+    handleGesture();
+}, false);
+
+function handleGesture() {
+    const swipeThreshold = 50; // Minimum distance to consider a swipe
+    const xDiff = touchendX - touchstartX;
+    const yDiff = touchendY - touchstartY;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff) && Math.abs(xDiff) > swipeThreshold) {
+        if (xDiff > 0) {
+            swipe("right");
+        } else {
+            swipe("left");
+        }
+    } else if (Math.abs(yDiff) > swipeThreshold) {
+        if (yDiff > 0) {
+            swipe("down");
+        } else {
+            swipe("up");
+        }
+    }
+    attemptPlacingNewNumber();
+}

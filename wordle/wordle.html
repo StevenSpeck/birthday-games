@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="worlde.css"></link>
+        <link rel="stylesheet" href="wordle.css"></link>
         <script src="wordle.js"></script>
     </head>
     <body>
@@ -53,38 +53,38 @@
         </div>
         <div class="keyboard">
             <div class="keyboard-row">
-                <button class="keyboard-button" onclick="placeLetter()">Q</button>
-                <button class="keyboard-button" onclick="placeLetter()">W</button>
-                <button class="keyboard-button" onclick="placeLetter()">E</button>
-                <button class="keyboard-button" onclick="placeLetter()">R</button>
-                <button class="keyboard-button" onclick="placeLetter()">T</button>
-                <button class="keyboard-button" onclick="placeLetter()">Y</button>
-                <button class="keyboard-button" onclick="placeLetter()">U</button>
-                <button class="keyboard-button" onclick="placeLetter()">I</button>
-                <button class="keyboard-button" onclick="placeLetter()">O</button>
-                <button class="keyboard-button" onclick="placeLetter()">P</button>
+                <button class="keyboard-button" onclick="placeLetter('Q')">Q</button>
+                <button class="keyboard-button" onclick="placeLetter('W')">W</button>
+                <button class="keyboard-button" onclick="placeLetter('E')">E</button>
+                <button class="keyboard-button" onclick="placeLetter('R')">R</button>
+                <button class="keyboard-button" onclick="placeLetter('T')">T</button>
+                <button class="keyboard-button" onclick="placeLetter('Y')">Y</button>
+                <button class="keyboard-button" onclick="placeLetter('U')">U</button>
+                <button class="keyboard-button" onclick="placeLetter('I')">I</button>
+                <button class="keyboard-button" onclick="placeLetter('O')">O</button>
+                <button class="keyboard-button" onclick="placeLetter('P')">P</button>
             </div>
             <div class="keyboard-row">
-                <button class="keyboard-button">A</button>
-                <button class="keyboard-button">S</button>
-                <button class="keyboard-button">D</button>
-                <button class="keyboard-button">F</button>
-                <button class="keyboard-button">G</button>
-                <button class="keyboard-button">H</button>
-                <button class="keyboard-button">J</button>
-                <button class="keyboard-button">K</button>
-                <button class="keyboard-button">L</button>
+                <button class="keyboard-button" onclick="placeLetter('A')">A</button>
+                <button class="keyboard-button" onclick="placeLetter('S')">S</button>
+                <button class="keyboard-button" onclick="placeLetter('D')">D</button>
+                <button class="keyboard-button" onclick="placeLetter('F')">F</button>
+                <button class="keyboard-button" onclick="placeLetter('G')">G</button>
+                <button class="keyboard-button" onclick="placeLetter('H')">H</button>
+                <button class="keyboard-button" onclick="placeLetter('J')">J</button>
+                <button class="keyboard-button" onclick="placeLetter('K')">K</button>
+                <button class="keyboard-button" onclick="placeLetter('L')">L</button>
             </div>
             <div class="keyboard-row">
-                <button class="keyboard-button">Enter</button>
-                <button class="keyboard-button">Z</button>
-                <button class="keyboard-button">X</button>
-                <button class="keyboard-button">C</button>
-                <button class="keyboard-button">V</button>
-                <button class="keyboard-button">B</button>
-                <button class="keyboard-button">N</button>
-                <button class="keyboard-button">M</button>
-                <button class="keyboard-button"><img src="wordle\backspace.jpg"></button>
+                <button class="keyboard-button" onclick="submit()">Enter</button>
+                <button class="keyboard-button" onclick="placeLetter('Z')">Z</button>
+                <button class="keyboard-button" onclick="placeLetter('X')">X</button>
+                <button class="keyboard-button" onclick="placeLetter('C')">C</button>
+                <button class="keyboard-button" onclick="placeLetter('V')">V</button>
+                <button class="keyboard-button" onclick="placeLetter('B')">B</button>
+                <button class="keyboard-button" onclick="placeLetter('N')">N</button>
+                <button class="keyboard-button" onclick="placeLetter('M')">M</button>
+                <button class="keyboard-button" onclick="backspace()"><img src="backspace.svg"></button>
             </div>
         </div>
         <!-- <button id="start" onClick="startGame()">Start Game</button>

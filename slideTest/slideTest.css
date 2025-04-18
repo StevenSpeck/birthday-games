@@ -1,0 +1,66 @@
+/* * {
+    transition: all 1s ease-out;
+} */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "NYT Franklin", Arial, sans-serif; /* Include fallback fonts */
+}
+.background {
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.background-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+    margin: .5rem;
+    background-color: lightgray;
+    font-size: 3rem;
+    border-radius: 1rem;
+}
+
+.foreground {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    /* background-color: gray; */
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.foreground-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+    /* margin-top: -7.5rem; */
+    /* margin-top: -13rem; */
+    /* margin-top: -18.5rem; */
+    margin-top: -24rem;
+    /* margin-left: -5.5rem; */
+    /* margin-left: -11.5rem; */
+    /* margin-left: 6rem; */
+    margin-left: 18rem;
+    background-color: beige;
+    color: brown;
+    font-weight: bold;
+    font-size: 3rem;
+    border-radius: 1rem;
+
+    transition: margin-left .1s;
+}
+/* .foreground-cell:hover {
+    margin-left: 6rem;
+} */

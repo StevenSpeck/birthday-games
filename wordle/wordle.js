@@ -1,8 +1,48 @@
 var board = [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
-let currentWord
+
+const bagOfWords = [
+    "SPECK", "SMITA", "KITTY", "ROBOT", "BIRDS", "BIRTH", "SQUAT", "MIAMI", "AKRON", "TRACK", "HAPPY", "RAMEN", "CASTRO", "HUMAN", "SMILE", "EARTH", "STEVE", "PIZZA"
+]
+
+const solution = bagOfWords[Math.floor(Math.random()*bagOfWords.length)]
+const solutionArray = [...solution];
+let currentGuessArray = [];
+let wordNumber = 0;
+let letterNumber = 0;
+
 function placeLetter(letter) {
-    currentWord = currentWord + (currentWord.length < 5 ? letter : "")
-    
+    if (currentGuessArray.length < 5) {
+        currentGuessArray.push(letter);
+        let guessedLetter = document.getElementById(wordNumber*5 + letterNumber)
+        guessedLetter.innerText = letter;
+        guessedLetter.style.borderColor = "gray";
+        letterNumber += 1;
+    }
+    console.log(currentGuess)
+}
+
+function submit() {
+    if (currentGuessArray.length === 5) {
+        wordNumber += 1;
+        let guessIsCorrectSoFar = true;
+        for (let i=0;i<6;i++) {
+            if (solutionArray[i] !== currentGuessArray[i]) {
+                guessIsCorrectSoFar = false;
+            }
+            else {
+                
+            }
+        }
+    }
+}
+
+function backspace() {
+    if (currentGuessArray.length > 0) {
+        currentGuessArray.pop()
+        letterNumber -= 1;
+        document.getElementById(wordNumber*5 + letterNumber).innerText = "";
+    }
+    console.log(currentGuessArray)
 }
 
 // var board = [,,,,,,,,,,,,,,,]
