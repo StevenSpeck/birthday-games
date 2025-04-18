@@ -6,6 +6,7 @@ const bagOfWords = [
 
 const solution = bagOfWords[Math.floor(Math.random()*bagOfWords.length)]
 const solutionArray = [...solution];
+const solutionSet = Set(solutionArray);
 let currentGuessArray = [];
 let wordNumber = 0;
 let letterNumber = 0;
@@ -23,16 +24,26 @@ function placeLetter(letter) {
 
 function submit() {
     if (currentGuessArray.length === 5) {
-        wordNumber += 1;
         let guessIsCorrectSoFar = true;
         for (let i=0;i<6;i++) {
+            let currentBox = document.getElementById(wordNumber*5 + i).style
             if (solutionArray[i] !== currentGuessArray[i]) {
+                if (solutionSet.has(currentGuessArray[i])) {
+                    currentBox.backgroundColor = "yellow";    
+                }
+                else {
+                    currentBox.backgroundColor = "gray";
+                }
                 guessIsCorrectSoFar = false;
             }
             else {
-                
+                currentBox.backgroundColor = "green";
             }
         }
+        if (guessIsCorrectSoFar) {
+            document.getElementById("body").style.backgroundColor = "blue";
+        }
+        wordNumber += 1;
     }
 }
 

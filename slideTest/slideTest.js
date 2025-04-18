@@ -99,22 +99,31 @@
 //         document.getElementById(selectedPosition).innerText = board[selectedPosition];
 //     }
 // }
-let left = true;
+let board = [,,,,,,,,,,,,,,,,]
 
 const positions = {
     "vertical":{
-        0: "margin-top: -24rem",
-        1:"margin-top: -18.5rem",
-        2: "margin-top: -13rem",
-        3: "margin-top: -7.5rem",
+        0: "-24rem",
+        1: "-18.5rem",
+        2: "-13rem",
+        3: "-7.5rem" //margin-top
     },
     "horizontal": {
-        0:"margin-left: -11.5rem",
-        1: "margin-left: -5.5rem",
-        2: "margin-left: 6rem",
-        3: "margin-left: 18rem"
+        0:"-11.5rem",
+        1: "-5.5rem",
+        2: "6rem",
+        3: "18rem" //margin-left:
     }
 };
+
+function moveAtoB(locA, locB) {
+    let aVal = board[locA], bVal = board[locB];
+    //do nothing if A is empty, or B exists and is bigger than A
+    //move A to B if B is empty
+    //move A to B and transform into 2*A if A === B
+}
+
+
 
 function swipe(direction) {
     if ("left") {

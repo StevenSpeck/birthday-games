@@ -2,6 +2,7 @@
     transition: all 1s ease-out;
 } */
 body {
+    overflow: hidden; /* Or touch-action: none */
     display: flex;
     flex-direction: column;
     align-items: center;
