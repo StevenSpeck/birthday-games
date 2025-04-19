@@ -48,3 +48,9 @@ a {
     color: white;
     text-align: center;
 }
+
+img {
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem;
+}

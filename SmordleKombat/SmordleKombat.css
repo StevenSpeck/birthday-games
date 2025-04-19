@@ -1,0 +1,159 @@
+/* header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20vw;
+    height: 3rem;
+    border-radius: 1rem;
+    border-color: gray;
+    border-width: .125rem;
+    border-style: solid;
+    margin: auto;
+    padding-left: 35vw;
+    padding-right: 35vw; */
+/* } */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* width: 20vw; */
+    width:90vw;
+    height: 4rem;
+    border-radius: 1rem;
+    border-color: gray;
+    border-width: .125rem;
+    border-style: solid;
+    margin: auto;
+    /* padding-left: 35vw;
+    padding-right: 35vw; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* font-family: "NYT Franklin", Arial, sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.guesses {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.guess-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.guess-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    padding: .5rem;
+    margin: .15rem;
+    color: black;
+    font-size: 2rem;
+    border-color: #D3D6DA;
+    border-width: .125rem;
+    border-style: solid;
+}
+
+.keyboard-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.keyboard-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 4rem;
+    min-width: 2.75rem;
+    padding: .5rem;
+    margin: .1rem;
+
+    background-color: #D3D6DA;
+
+    border-radius: .25rem;
+    border-width: .125rem;
+    border-style: solid;
+    /* border-color: #D3D6DA; */
+    border-color: white;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#special-key {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right:1rem
+}
+
+img {
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+}
+
+@keyframes flip {
+    0% {
+      transform: scaleY(1);
+    }
+  
+    50% {
+      /* background: white; */
+      transform: scaleY(0);
+    }
+  
+    100% {
+      transform: scaleY(1);
+      /* background: green; */
+    }
+}  
+.flip {
+    animation: flip 500ms forwards;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  @keyframes violentShake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-10deg); }
+    20% { transform: translate(-3px, 0px) rotate(10deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(10deg); }
+    50% { transform: translate(-1px, 2px) rotate(-10deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-10deg); }
+    80% { transform: translate(-1px, -1px) rotate(10deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-10deg); }
+  }
